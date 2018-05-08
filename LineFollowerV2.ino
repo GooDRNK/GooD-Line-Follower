@@ -15,7 +15,7 @@ unsigned int SV[7]; //Variabila in care se stocheaza intensitatea senzorului pe 
 int PID; //Valoarea returnata de PID pentru corectia motoarelor.
 int le; //ultima eroare
 int err; //eroare fata de linie
-int i //contor pentru linia punctata
+int i; //contor pentru linia punctata
 boolean pct = false; //variabila ce arata daca a fost terminata linia punctata pe traseu 
 int lpos; //ultima pozitie salvata
 int si[4]; //Valuarea in digital a unui senzor.
@@ -64,7 +64,7 @@ void loop()
   sl[0]=si[0];
   sl[1]=si[1];
   sl[2]=si[2];
-  s1[3]=si[3];
+  sl[3]=si[3];
   //
   D(Snz.readLine(SV));
 }
